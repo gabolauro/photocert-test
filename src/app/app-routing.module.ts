@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { ClaimDetailComponent } from './components/claim-detail/claim-detail.component';
+
+const routes: Routes = [
+	{ path: 'claimDetail', component: ClaimDetailComponent  },
+	{ path: '**', pathMatch: 'full', redirectTo: 'claimDetail' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

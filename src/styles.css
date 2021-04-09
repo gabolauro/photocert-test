@@ -1,1 +1,153 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+
+
+
+body {
+	background-color: #EEE;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+
+.container {
+	background-color: #FFF;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #666;
+	width: 90%;
+}
+
+
+/*INFO CONTENT*/
+
+.info {
+	background-color: #FFF;
+	margin-bottom: 10px;
+}
+
+.info .row {
+	margin: 10px 0;
+}
+
+.info small {
+	display: block;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 9px;
+	line-height: 12px;
+	color: #434343;
+}
+
+.info span {
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+}
+
+.info span.validated {
+	/* Green */
+	color: #61CB83;
+}
+
+
+/* DISPLAY ONE CONTETN */
+
+.displayOne .imageDisplay img {
+	width: 100%;
+}
+
+
+/* CAROUSEL */
+
+.crousel {
+	background-color: #333;
+	height: 120px;
+}
+
+.crousel .displayTwo {
+	/*background: #FFFA;*/
+	height: 120px;
+}
+
+.crousel .displayTree {
+	/*background: #FFF6;*/
+	height: 120px;
+	/*overflow-x: hidden;*/
+}
+
+.crousel .displayTree .owlCarousel {
+	height: 100%;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.crousel .displayTree .itemGroup {
+	height: 50%;
+	position: relative;
+	float: left;
+}
+
+.crousel .displayTree .item {
+	padding: 10px;
+	width: fit-content;
+	float: left;
+}
+
+.crousel .displayTree .item .checked {
+	height: 20px;
+    width: 20px;
+    background: #61CB83;
+    top: 2px;
+    right: 4px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 9;
+}
+
+.crousel .displayTree .item .checked img {
+	height: 100%;
+    margin: auto;
+}
+
+.crousel .displayTree .owlCarousel .prev, .crousel .displayTree .owlCarousel .next {
+	height: 32px;
+    width: 32px;
+    font-size: 20px;
+    background: #FFF;
+    color: #000;
+    top: 33%;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9;
+    transition: all 1s;
+}
+.crousel .displayTree .owlCarousel .prev:hover, .crousel .displayTree .owlCarousel .next:hover {
+	opacity: .5;
+}
+
+.crousel .displayTree .owlCarousel .prev {
+	left: 0px
+}
+.crousel .displayTree .owlCarousel .next {
+	right: 5px
+}
+
+/*@media (min-width: 768px) {
+
+.container, .container-md, .container-sm {
+    max-width: 640px;
+
+}
+
+
+@media (max-width: 767px) {
+
+.container, .container-md, .container-sm {
+    max-width: 80%;
+   
+}*/ 
