@@ -1,0 +1,262 @@
+[
+  	{
+  		"id": 1,
+  		"imgThumb": "assets/img/imgThumb_01.png",
+      "img": "assets/img/img_01.png",
+  		"date": "01/03/2020",
+  		"time": "16:56",
+  		"weather": "Clear",
+  		"GPSPrecision": "5.0",
+  		"validated": true,
+  		"lat": 51.678418,
+		"lng": 7.809007
+
+  	},
+  	{
+  		"id": 2,
+  		"imgThumb": "assets/img/imgThumb_02.png",
+      "img": "assets/img/img_02.png",
+  		"date": "02/03/2020",
+  		"time": "16:56",
+  		"weather": "Clear",
+  		"GPSPrecision": "5.0",
+  		"validated": true,
+  		"lat": 51.678418,
+		"lng": 7.809007
+
+  	},
+  	{
+  		"id": 3,
+  		"imgThumb": "assets/img/imgThumb_03.png",
+      "img": "assets/img/img_03.png",
+  		"date": "03/03/2020",
+  		"time": "16:56",
+  		"weather": "Clear",
+  		"GPSPrecision": "5.0",
+  		"validated": true,
+  		"lat": 51.678418,
+		"lng": 7.809007
+
+  	},
+  	{
+  		"id": 4,
+  		"imgThumb": "assets/img/imgThumb_04.png",
+      "img": "assets/img/img_04.png",
+  		"date": "04/03/2020",
+  		"time": "16:56",
+  		"weather": "Clear",
+  		"GPSPrecision": "5.0",
+  		"validated": false,
+  		"lat": 51.678418,
+		"lng": 7.809007
+
+  	},
+    {
+      "id": 5,
+      "imgThumb": "assets/img/imgThumb_05.png",
+      "img": "assets/img/img_05.png",
+      "date": "05/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 6,
+      "imgThumb": "assets/img/imgThumb_06.png",
+      "img": "assets/img/img_06.png",
+      "date": "06/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 7,
+      "imgThumb": "assets/img/imgThumb_07.png",
+      "img": "assets/img/img_07.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 8,
+      "imgThumb": "assets/img/imgThumb_08.png",
+      "img": "assets/img/img_08.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 9,
+      "imgThumb": "assets/img/imgThumb_09.png",
+      "img": "assets/img/img_09.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 10,
+      "imgThumb": "assets/img/imgThumb_10.png",
+      "img": "assets/img/img_10.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 11,
+      "imgThumb": "assets/img/imgThumb_11.png",
+      "img": "assets/img/img_11.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 12,
+      "imgThumb": "assets/img/imgThumb_12.png",
+      "img": "assets/img/img_12.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 13,
+      "imgThumb": "assets/img/imgThumb_13.png",
+      "img": "assets/img/img_13.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 14,
+      "imgThumb": "assets/img/imgThumb_14.png",
+      "img": "assets/img/img_14.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 15,
+      "imgThumb": "assets/img/imgThumb_15.png",
+      "img": "assets/img/img_15.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 16,
+      "imgThumb": "assets/img/imgThumb_16.png",
+      "img": "assets/img/img_16.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 17,
+      "imgThumb": "assets/img/imgThumb_17.png",
+      "img": "assets/img/img_17.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 18,
+      "imgThumb": "assets/img/imgThumb_18.png",
+      "img": "assets/img/img_18.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 19,
+      "imgThumb": "assets/img/imgThumb_19.png",
+      "img": "assets/img/img_19.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    },
+    {
+      "id": 20,
+      "imgThumb": "assets/img/imgThumb_20.png",
+      "img": "assets/img/img_20.png",
+      "date": "30/03/2020",
+      "time": "16:56",
+      "weather": "Clear",
+      "GPSPrecision": "5.0",
+      "validated": true,
+      "lat": 51.678418,
+    "lng": 7.809007
+
+    }
+  ]

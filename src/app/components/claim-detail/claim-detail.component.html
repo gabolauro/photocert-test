@@ -5,30 +5,30 @@
 			<div class="row">
 				<div class="col-9">
 					<small>Security check</small>
-					<span class="validated"><i class="fa fa-check-square"></i> Validated</span>
+					<span *ngIf="validated" class="validated"><i class="fa fa-check-square"></i> Validated</span>
 				</div>
 				<div class="col-3">
 					<small>Photo #</small>
-					<span>1</span>
+					<span>{{ id }}</span>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-3">
 					<small>Date</small>
-					<span>30/03/2020</span>
+					<span>{{ date }}</span>
 				</div>
 				<div class="col-3">
 					<small>Time</small>
-					<span>16:56</span>
+					<span>{{ time }}</span>
 				</div>
 				<div class="col-3">
 					<small>Weather</small>
-					<span>Clear</span>
+					<span>{{ weather }}</span>
 				</div>
 				<div class="col-3">
 					<small>GPS precision</small>
-					<span>+/- 5.0 m</span>
+					<span>+/- {{ GPSPrecision }} m</span>
 				</div>
 			</div>
 			
@@ -38,15 +38,23 @@
 		<div class="displayOne">
 			
 			<div class="imageDisplay">
+
+				<div *ngIf="!selected" class="alert alert-info">SELECT PHOTO<br><i class="fa fa-arrow-down"></i></div>
 				
-				<img src="assets/img/img_01.png">
+				<img *ngIf="selected && !switch" [src]="image">
+
+				<agm-map  *ngIf="selected && switch" [latitude]="lat" [longitude]="lng">
+				  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+				</agm-map>
 
 			</div>
 
 		</div>
 
 		
-		<app-claim-carousel></app-claim-carousel>
+		<app-claim-carousel
+			(newItemEvent)="addItem($event)"
+			(switchEvent)="switchDisplay($event)"></app-claim-carousel>
 		
 
 

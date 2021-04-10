@@ -51,11 +51,31 @@ line-height: 18px;
 }
 
 
+
 /* DISPLAY ONE CONTETN */
+
+.displayOne .imageDisplay .alert {
+	text-align: center;
+
+}
+
+.displayOne .imageDisplay {
+	height: auto;
+}
 
 .displayOne .imageDisplay img {
 	width: 100%;
 }
+
+.displayOne agm-map {
+  height: 400px;
+}
+
+
+agm-map.minimap {
+  height: 120px;
+}
+
 
 
 /* CAROUSEL */
@@ -65,54 +85,79 @@ line-height: 18px;
 	height: 120px;
 }
 
+.crousel .row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 .crousel .displayTwo {
 	/*background: #FFFA;*/
 	height: 120px;
+	padding: 0;
+	cursor: pointer;
 }
 
 .crousel .displayTree {
 	/*background: #FFF6;*/
 	height: 120px;
-	/*overflow-x: hidden;*/
-}
-
-.crousel .displayTree .owlCarousel {
-	height: 100%;
-    position: relative;
-    float: left;
-    width: 100%;
+	position: relative;
+	overflow: hidden;
 }
 
 .crousel .displayTree .itemGroup {
 	height: 50%;
 	position: relative;
-	float: left;
+	overflow: hidden;
 }
 
-.crousel .displayTree .item {
-	padding: 10px;
-	width: fit-content;
-	float: left;
+.owl-item {
+  height: auto;
+  width: 100%;
+  position: relative;
+  float: left;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.crousel .displayTree .item .checked {
+.owl-item:hover img {
+	filter: brightness(150%);
+}
+
+
+
+.owl-item .checked {
 	height: 20px;
     width: 20px;
     background: #61CB83;
     top: 2px;
-    right: 4px;
+    right: -6px;
     position: absolute;
     border-radius: 50%;
     text-align: center;
     z-index: 9;
 }
 
-.crousel .displayTree .item .checked img {
-	height: 100%;
-    margin: auto;
+.owl-item .rejected {
+	height: 20px;
+    width: 20px;
+    background: #cb6161;
+    color: #FFF;
+    top: 2px;
+    right: -6px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 9;
 }
 
-.crousel .displayTree .owlCarousel .prev, .crousel .displayTree .owlCarousel .next {
+.owl-item .checked img {
+	height: 12px;
+    margin: auto;
+    position: relative;
+    margin: 0px 4px 6px 4px;
+}
+
+.crousel .displayTree .prev, .crousel .displayTree .next {
 	height: 32px;
     width: 32px;
     font-size: 20px;
@@ -126,21 +171,22 @@ line-height: 18px;
     z-index: 9;
     transition: all 1s;
 }
-.crousel .displayTree .owlCarousel .prev:hover, .crousel .displayTree .owlCarousel .next:hover {
+.crousel .displayTree .prev:hover, .crousel .displayTree .next:hover {
 	opacity: .5;
 }
 
-.crousel .displayTree .owlCarousel .prev {
+.crousel .displayTree .prev {
 	left: 0px
 }
-.crousel .displayTree .owlCarousel .next {
+.crousel .displayTree .next {
 	right: 5px
 }
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
 
 .container, .container-md, .container-sm {
     max-width: 640px;
+}
 
 }
 
@@ -150,4 +196,6 @@ line-height: 18px;
 .container, .container-md, .container-sm {
     max-width: 80%;
    
-}*/ 
+}
+
+}

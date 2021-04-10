@@ -2,159 +2,68 @@
 
 	<div class="row">
 
-		<div class="col-3 displayTwo"></div>
+		<div (click)="switchDisplay()" class="col-3 displayTwo">
+			
+			<agm-map *ngIf="location && !switch" class="minimap" [latitude]="lat" [longitude]="lng">
+			  <agm-marker	[latitude]="lat"
+			  				[longitude]="lng"></agm-marker>
+			</agm-map>
+
+			<img *ngIf="location && switch" [src]="imgDisplay" height="120">
+
+		</div>
 
 		<div class="col-9 displayTree">
 
-			<div class="owlCarousel">
 
-				<div class="itemGroup owl-carousel">
-					
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
+			<div class="itemGroup">
 
 
-				</div>
+			<owl-carousel-o [options]="customOptions" #owlCar1>
 
 
-				<div class="itemGroup owl-carousel">
-					
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
-
-					<div class="item">
-						<span class="checked">
-							<img src="assets/img/check.svg">
-						</span>
-						<img src="assets/img/imgThumb_01.png">
-					</div>	
+				  <ng-template *ngFor="let item of claim.slice(0, 10)" carouselSlide>
+				    <span class="checked">
+						<img src="assets/img/check.svg">
+					</span>
+				    <img (click)="selectImg(item)" [src]="item.imgThumb">
+				  </ng-template>
 
 
-				</div>	
+
+			</owl-carousel-o>
+
+			</div>
+
+			<div class="itemGroup">
 
 
-				<div class="prev">
-					<i class="fa fa-angle-left"></i>
-				</div>
-				<div class="next">
-					<i class="fa fa-angle-right"></i>
-				</div>
+			<owl-carousel-o [options]="customOptions" #owlCar2>
 
 
-			</div>	
+				  <ng-template *ngFor="let item of claim.slice(11, 20)" carouselSlide>
+				    <span class="checked">
+						<img src="assets/img/check.svg">
+					</span>
+				    <img (click)="selectImg(item)" [src]="item.imgThumb">
+				  </ng-template>
+				
+
+			</owl-carousel-o>
+
+			</div>
+
+				
+			
+
+
+			<div class="prev" (click)="owlCar1.prev(); owlCar2.prev()">
+				<i class="fa fa-angle-left"></i>
+			</div>
+			<div class="next" (click)="owlCar1.next(); owlCar2.next()">
+				<i class="fa fa-angle-right"></i>
+			</div>
+
 
 		</div>
 

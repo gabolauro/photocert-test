@@ -13,5 +13,10 @@
     {
       "path": "./tsconfig.spec.json"
     }
-]
+],
+    "compilerOptions": {
+    "types": ["google.maps", "googlemaps"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  }
 }
